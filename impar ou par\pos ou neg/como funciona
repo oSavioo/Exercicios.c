@@ -1,0 +1,6 @@
+Ele funciona da seguinte forma. 
+-para negativo par é uma resposta 
+-para negativo ímpar é uma resposta 
+-para positivo par é uma resposta 
+-para positivo ímapr é uma resposta 
+-e quando é zero é = Null
