@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+
+void abertura(){
+printf("--------------------------------------------\n");
+printf("-                  TABUADA                 -\n");
+printf("--------------------------------------------\n");
+}
+
+int main(){
+int multi;
+abertura();
+
+printf("numero que voce deseja fazer a tabuada: ");
+scanf("%d", &multi);
+
+
+for(int i=1 ; i<=10;i++){
+    printf(" A MULTIPLICACAO ENTRE %d X %d eh: %d\n", multi,i, multi * i);
+}
+
+
+
+}
