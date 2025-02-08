@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    float luthor;
+    int i, count = 0;
+
+    for (i = 0; i < 6; i++) {
+        scanf("%f", &luthor);
+        if (luthor > 0) {
+            count++;
+        }
+    }
+    printf("%d valores positivos\n", count);
+
+    return 0;
+}

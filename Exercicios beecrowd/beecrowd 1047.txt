@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+
+int hi,mi,hf,mf;
+int main(){
+
+scanf("%d",&hi);
+scanf("%d",&mi);
+scanf("%d",&hf);
+scanf("%d",&mf);
+
+int minutoi = hi * 60 + mi;
+int minutof = hf * 60 + mf;
+int diferenca = minutof - minutoi;
+
+if(diferenca <= 0){
+    diferenca += 24*60;
+}
+int horas = diferenca / 60;
+int minutos = diferenca %60;
+printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",horas,minutos);
+
+return 0;
+}

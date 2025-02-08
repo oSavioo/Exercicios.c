@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    float luthor,soma;
+    int i, count = 0;
+
+    for (i = 0; i < 6; i++) {
+        scanf("%f", &luthor);
+        if (luthor > 0) {
+            count++;
+            soma +=luthor;
+        }
+    }
+        printf("%d valores positivos\n", count);
+
+       if(count>0){
+       float media = soma / count;
+        printf("%.1f\n",media);
+
+       }
+
+
+    return 0;
+}

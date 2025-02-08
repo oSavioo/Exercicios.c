@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main(){
+int x,n,out=0,in=0,i;
+
+scanf("%d",&i);
+
+for(n=0;n<i;n++){
+
+scanf("%d",&x);
+    if(x > (int) pow(-10,7) && x < (int) pow(10,7)){
+        if(x>= 10 && x<=20){
+
+            in++;
+        }
+        else{
+
+           out++;
+        }
+    }
+}
+printf("%d in\n",in);
+printf("%d out\n",out);
+
+ return 0;
+}
