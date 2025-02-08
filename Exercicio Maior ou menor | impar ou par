@@ -1,0 +1,34 @@
+//Primeiro é a qntd de entradas e pos isso vai ver se o numero é positivo ou negativo e se e impar ou par 
+#include <stdio.h>
+
+int main() {
+    int N;
+
+    scanf("%d", &N);
+
+    int valores[N];
+
+    for (int i = 0; i < N; i++) {
+        scanf("%d", &valores[i]);
+    }
+
+    for (int i = 0; i < N; i++) {
+        if (valores[i] == 0) {
+            printf("NULL\n");
+        } else if (valores[i] % 2 == 0) {
+            if (valores[i] > 0) {
+                printf("PAR POSITIVO\n");
+            } else {
+                printf("PAR NEGATIVO\n");
+            }
+        } else {
+            if (valores[i] > 0) {
+                printf("IMPAR POSITIVO\n");
+            } else {
+                printf("IMPAR NEGATIVO\n");
+            }
+        }
+    }
+
+    return 0;
+}
