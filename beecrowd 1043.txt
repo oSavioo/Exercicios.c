@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float med1, med2, med3;
+
+    scanf("%f", &med1);
+    scanf("%f", &med2);
+    scanf("%f", &med3);
+
+    if ((fabs(med2 - med3) < med1) && (med1 < med2 + med3) &&
+        (fabs(med1 - med3) < med2) && (med2 < med1 + med3) &&
+        (fabs(med1 - med2) < med3) && (med3 < med1 + med2)) {
+
+        float perimetro = med1 + med2 + med3;
+        printf("Perimetro = %.1f\n", perimetro);
+
+    } else {
+
+        float area = ((med1 + med2) * med3) / 2;
+        printf("Area = %.1f\n", area);
+    }
+
+    return 0;
+}
